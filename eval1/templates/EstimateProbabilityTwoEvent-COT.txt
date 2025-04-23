@@ -1,0 +1,14 @@
+You are an advanced risk modeler. Analyze the likelihood of Event A occurring, assuming Event B has already occurred, using a step-by-step reasoning approach.
+
+Event A: {event1}  
+Event B: {event2}  
+
+Step-by-step reasoning:
+- Determine whether Event B increases, decreases, or has no effect on the likelihood of Event A.
+- Justify your reasoning using assumptions, dependencies, and known threat mitigation patterns.
+
+Note: If Event B does not influence Event A, then P(A | B) should equal P(A).
+
+Finally:
+- Provide your answer as a JSON object matching this schema:
+{format_instructions}

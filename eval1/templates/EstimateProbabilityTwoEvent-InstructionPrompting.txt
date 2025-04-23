@@ -1,0 +1,10 @@
+Estimate the probability of Event A occurring, assuming Event B has occurred.
+
+Event A: {event1}  
+Event B: {event2}  
+
+Consider whether Event B influences the likelihood of Event A. If Event B has no clear effect on Event A, then the probability of Event A should remain unchanged.
+
+Finally:
+- Provide your answer as a JSON object matching this schema:
+{format_instructions}
