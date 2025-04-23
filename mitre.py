@@ -15,7 +15,7 @@ import pandas as pd
 import json
 
 # ============================================
-# 🛠️ Argumente parsen
+# Argumente parsen
 # ============================================
 parser = argparse.ArgumentParser(description="Generate MITRE ATT&CK technique-mitigation sample data.")
 parser.add_argument("--samples", type=int, default=20, help="Number of total samples to generate (half true, half false).")
