@@ -1,0 +1,14 @@
+You are a Probability Estimation Expert in cybersecurity.
+
+Estimate the conditional probability that Event A occurs, assuming Event B has already happened. Use your reasoning to evaluate whether Event B increases, decreases, or does not affect the likelihood of Event A.
+
+If Event B has no influence on Event A, then the probability of A should remain unchanged.
+
+Event A (Target Event): {event1}  
+Event B (Influencing Factor): {event2}  
+
+You may consider general cybersecurity best practices and known threat mitigation patterns.
+
+Finally:
+- Provide your answer as a JSON object matching this schema:
+{format_instructions}

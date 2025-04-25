@@ -1,0 +1,30 @@
+Below are examples of probability estimates for two related events:
+
+Example 1:  
+Event A: "Ransomware encrypts company data. (T1486 - Data Encrypted for Impact)"  
+Event B: "The company has an advanced EDR solution."  
+P(A): 0.75  
+P(A | B): 0.10  
+
+Example 2:  
+Event A: "An employee opens a spearphishing attachment. (T1566.001)"  
+Event B: "The organization has an email sandboxing service."  
+P(A): 0.30  
+P(A | B): 0.15  
+
+Example 3:  
+Event A: "An attacker uses a valid account to access a system. (T1078)"  
+Event B: "The company enforces multi-factor authentication (MFA)."  
+P(A): 0.6  
+P(A | B): 0.2  
+
+If Event B has **no influence** on Event A, then **P(A | B)** should equal **P(A)**.
+
+Now estimate the conditional probability for:
+
+Event A: {event1}  
+Event B: {event2}  
+
+Finally:
+- Provide your answer as a JSON object matching this schema:
+{format_instructions}
