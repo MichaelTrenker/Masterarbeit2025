@@ -1,0 +1,69 @@
+Okay, let me try to work through this questionnaire. The task is to assign weighting factors (between 0 and 1) to each of the features listed, based on how indicative they are of the T1048 technique, which is data exfiltration over alternative protocols. There's also a leakage factor, a confidence question, and a check if I understood the task.
+
+Starting with question 1: Alternative Exfiltration via Cloud Services. The feature here is unusual file uploads via services like Google Drive or OneDrive. Since cloud services are common for exfiltration, this seems highly relevant. Maybe assign a 0.8 here. But wait, the question is about alternative protocols. Cloud services typically use HTTPS, which is standard. However, if the adversary uses these services as an alternative to their main C2 channel, then it's relevant. Hmm, maybe 0.7 instead.
+
+Question 2: Suspicious Cloud Storage Access. This involves unusual access patterns like many shares/downloads. Similar to question 1. Maybe 0.7 again? But if the cloud access is via APIs or non-standard methods, it could be higher. The description mentions unexpected sources, so maybe 0.75.
+
+Question 3: Alternative Protocol Exfiltration via Command Execution. Commands like scp, ftp, curl. These are directly related to using alternative protocols (FTP, SCP, etc.) for data transfer. This seems very relevant. Probably a high weight, like 0.9.
+
+Question 4: File Access Before Exfiltration. Accessing sensitive files before exfiltrating. This is more about preparation. While important, it's not directly about using alternative protocols. Maybe 0.6 because it's a precursor but not the exfiltration itself.
+
+Question 5: Outbound Connections Over Non-Standard Ports. Using ports like 21 (FTP), 25 (SMTP) for large data transfers. This is a strong indicator. Non-standard ports for these protocols might be stealthier. Assigning 0.85.
+
+Question 6: Anomalies in Protocol Traffic. Traffic that doesn't match expected patterns. This is a bit broad but important. If the protocol structure is anomalous, it might indicate obfuscation. Maybe 0.8.
+
+Question 7: Unusual Network Flows. New or unexpected data flows from processes that don't usually connect. This could indicate malicious activity. However, it's not specific to alternative protocols. Maybe 0.65.
+
+Leakage Factor: Probability of exfiltration even if no factors are observed. Considering unknown factors, maybe 0.1 (low but possible).
+
+Confidence: How sure am I? I think I understand the concepts, but some features are ambiguous. Maybe 7 out of 10.
+
+Verification: Did I understand? Yes, so answer "Ja".
+
+Wait, the last question (10) asks if I understood the task. Since the instructions were in German, but the response options are "Ja" or "Nein". I need to answer in German. So "Ja".
+
+Let me double-check the weights. For example, question 3 with commands like scp, ftp—directly using alternative protocols. So 0.9 makes sense. Question 5 is about non-standard ports for known protocols, which are still part of the alternative protocol exfiltration. 0.85 is good. Leakage factor at 0.1 seems reasonable as a baseline. Confidence at 7 because some factors were a bit tricky.
+
+Antworten:
+
+Alternative Exfiltration via Cloud Services
+Antwort: 0.7
+
+Suspicious Cloud Storage Access
+Antwort: 0.75
+
+Alternative Protocol Exfiltration via Command Execution
+Antwort: 0.9
+
+File Access Before Exfiltration
+Antwort: 0.6
+
+Outbound Connections Over Non-Standard Ports
+Antwort: 0.85
+
+Anomalies in Protocol Traffic
+Antwort: 0.8
+
+Unusual Network Flows
+Antwort: 0.65
+
+Leakage-Faktor
+Antwort: 0.1
+
+Sicherheit der Einschätzungen
+Antwort: 7
+
+Verständnis
+Antwort: Ja
+
+Begründung (kurz):
+
+Fragen 1 & 2: Cloud-Dienste nutzen oft Standardprotokolle (HTTPS), sind aber dennoch relevante Indikatoren für alternative Exfiltration, daher mittelhohe Werte.
+
+Frage 3: Direkte Nutzung von Befehlen für alternative Protokolle (z. B. FTP) ist stark aussagekräftig (0.9).
+
+Frage 5 & 6: Nicht-Standard-Ports und Protokollanomalien deuten auf gezielte Umgehung hin (0.85, 0.8).
+
+Leakage-Faktor: Geringe Grundwahrscheinlichkeit (0.1), da unbekannte Faktoren schwer abzuschätzen sind.
+
+Sicherheit: 7/10 aufgrund subjektiver Einschätzung bei einigen Merkmalen.

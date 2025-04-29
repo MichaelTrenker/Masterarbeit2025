@@ -1,0 +1,42 @@
+Antworten zum Fragebogen zur Erstellung von Knotenwahrscheinlichkeitstabellen für Bayes’sche Netze
+1. Alternative Exfiltration via Cloud Services
+Gewichtungsfaktor: 0.8
+Begründung: Ungewöhnliche Datei-Uploads über Cloud-Dienste sind ein starkes Indiz für Exfiltration, da Cloud-Dienste häufig für solche Zwecke missbraucht werden.
+
+2. Suspicious Cloud Storage Access
+Gewichtungsfaktor: 0.7
+Begründung: Verdächtige Zugriffe auf Cloud-Speicher deuten auf gezielte Datensammlung hin, sind aber weniger direkt als Uploads.
+
+3. Alternative Protocol Exfiltration via Command Execution
+Gewichtungsfaktor: 0.9
+Begründung: Befehle wie scp, ftp, oder curl sind klare Werkzeuge für Datenexfiltration und haben hohe Aussagekraft.
+
+4. File Access Before Exfiltration
+Gewichtungsfaktor: 0.6
+Begründung: Zugriffe auf sensible Dateien sind ein Vorläufer, aber nicht spezifisch genug für Exfiltration über alternative Protokolle.
+
+5. Outbound Connections Over Non-Standard Ports
+Gewichtungsfaktor: 0.8
+Begründung: Ungewöhnliche Ports mit großen Datenmengen sind ein starkes Anzeichen für Exfiltration.
+
+6. Anomalies in Protocol Traffic
+Gewichtungsfaktor: 0.7
+Begründung: Anomalien im Traffic können auf Exfiltration hinweisen, sind aber auch bei anderen Angriffen möglich.
+
+7. Unusual Network Flows
+Gewichtungsfaktor: 0.5
+Begründung: Unerwartete Netzwerkaktivitäten sind generell verdächtig, aber nicht spezifisch für T1048.
+
+8. Leakage-Faktor
+Antwort: 0.1
+Begründung: Die Wahrscheinlichkeit, dass Exfiltration ohne beobachtete Faktoren stattfindet, ist gering, aber aufgrund unbekannter Faktoren nicht null.
+
+9. Sicherheit der Einschätzungen
+Antwort: 8
+Begründung: Die Einschätzungen basieren auf typischen Mustern von T1048, aber Unsicherheiten bleiben bei der Interpretation von Netzwerkanomalien.
+
+10. Verständnis
+Antwort: Ja
+Begründung: Die Aufgabenstellung und das Noisy-OR-Modell sind klar verständlich.
+
+Hinweis: Die Gewichtungsfaktoren orientieren sich an der Relevanz der Merkmale für T1048 gemäß den beschriebenen Datenquellen (DS0015, DS0010, etc.). Der Leakage-Faktor reflektiert Hintergrundrisiken.
