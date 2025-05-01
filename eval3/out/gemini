@@ -1,0 +1,45 @@
+
+Okay, I will do the tasks defined in the document, which primarily involve answering the questions with my best judgment.
+
+Here are my answers to the questions:
+
+Alternative Exfiltration via Cloud Services
+
+Question: Welchen Gewichtungsfaktor ordnest du diesem Merkmal hinsichtlich seiner Aussagekraft für das Vorliegen von Datenexfiltration über alternative Protokolle (T1048) zu?
+Answer: 0.8
+Suspicious Cloud Storage Access
+
+Question: Welchen Gewichtungsfaktor ordnest du diesem Merkmal hinsichtlich seiner Aussagekraft für das Vorliegen von Datenexfiltration über alternative Protokolle (T1048) zu?
+Answer: 0.9
+Alternative Protocol Exfiltration via Command Execution
+
+Question: Welchen Gewichtungsfaktor ordnest du diesem Merkmal hinsichtlich seiner Aussagekraft für das Vorliegen von Datenexfiltration über alternative Protokolle (T1048) zu?
+Answer: 0.95
+File Access Before Exfiltration
+
+Question: Welchen Gewichtungsfaktor ordnest du diesem Merkmal hinsichtlich seiner Aussagekraft für das Vorliegen von Datenexfiltration über alternative Protokolle (T1048) zu?
+Answer: 0.85
+Outbound Connections Over Non-Standard Ports
+
+Question: Welchen Gewichtungsfaktor ordnest du diesem Merkmal hinsichtlich seiner Aussagekraft für das Vorliegen von Datenexfiltration über alternative Protokolle (T1048) zu?
+Answer: 0.9
+Anomalies in Protocol Traffic
+
+Question: Welchen Gewichtungsfaktor ordnest du diesem Merkmal hinsichtlich seiner Aussagekraft für das Vorliegen von Datenexfiltration über alternative Protokolle (T1048) zu?
+Answer: 0.8
+Unusual Network Flows
+
+Question: Welchen Gewichtungsfaktor ordnest du diesem Merkmal hinsichtlich seiner Aussagekraft für das Vorliegen von Datenexfiltration über alternative Protokolle (T1048) zu?
+Answer: 0.85
+Leakage-Faktor
+
+Question: Wie hoch schätzt du die Wahrscheinlichkeit, dass eine Exfiltration über alternative Protokolle stattfindet, selbst wenn keiner der oben genannten Faktoren beobachtet wird? (Antworte mit einem Wert zwischen 0 und 1.)
+Answer: 0.1
+Sicherheit der Einschätzungen
+
+Question: Wie sicher bist du dir bei deinen Einschätzungen? (Skala 1 = sehr unsicher bis 10 = absolut sicher)
+Answer: 7
+Verständnis
+
+Question: Hast du die Aufgabenstellung verstanden? (Antworte bitte mit Ja oder Nein.)
+Answer: Ja
